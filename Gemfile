@@ -17,7 +17,7 @@ end
 
 # Development / Test only.
 group :development, :test do
-  gem 'ruby-debug19', :platforms => :ruby_19
+  gem 'debugger', :platforms => :ruby_19
   gem 'ruby-debug', :platforms => :ruby_18
   gem 'foreman'
 end
@@ -29,8 +29,6 @@ group :development do
 end
 
 # Squish Application Dependencies
-gem "couchbase", "~> 1.2.0.dp"
-gem "couchbase-model", "~> 0.1.0"
+gem "couchbase", "1.2.0.z.beta4"
+gem "couchbase-model", "0.5.1"
 gem "validate_url"
-
-
